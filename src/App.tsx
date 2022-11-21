@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { Header } from './components/Header';
+import { Router } from './Router';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <h1>Hello World!</h1>;
+  return (
+    <div>
+      <Router />
+    </div>
+  );
 }
 
 export default App;
