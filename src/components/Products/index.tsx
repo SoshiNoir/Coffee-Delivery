@@ -1,5 +1,4 @@
 import { Minus, Plus, ShoppingCart } from 'phosphor-react';
-import Tradicional from '../../assets/Tradicional.svg';
 import { ProductsData } from './mock';
 import { ProductsContainer } from './style';
 

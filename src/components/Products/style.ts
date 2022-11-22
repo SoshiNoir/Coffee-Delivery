@@ -18,7 +18,9 @@ export const ProductsContainer = styled.div`
   .cards {
     margin-top: 54px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+
     gap: 32px;
 
     h1 {
@@ -43,7 +45,7 @@ export const ProductsContainer = styled.div`
     background-color: ${(props) => props.theme.baseCard};
 
     img {
-      margin-top: calc(0px - 1.5rem - 6px);
+      margin-top: calc(0px - 2.5rem - 6px);
     }
 
     .tags {
@@ -60,11 +62,6 @@ export const ProductsContainer = styled.div`
       color: ${(props) => props.theme.yellowDark};
       background-color: ${(props) => props.theme.yellowLight};
       border-radius: 100px;
-    }
-
-    .tag {
-      margin-top: 12px;
-      margin-bottom: 16px;
     }
 
     .description {
