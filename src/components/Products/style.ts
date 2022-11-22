@@ -24,6 +24,8 @@ export const ProductsContainer = styled.div`
     gap: 32px;
 
     h1 {
+      margin-top: 16px;
+      margin-bottom: 8px;
       margin-left: 20px;
       margin-right: 20px;
       font-family: 'Baloo 2';
@@ -34,6 +36,7 @@ export const ProductsContainer = styled.div`
   }
 
   .card {
+    margin-bottom: 20px;
     width: 256px;
     height: 310px;
     display: flex;
@@ -45,7 +48,7 @@ export const ProductsContainer = styled.div`
     background-color: ${(props) => props.theme.baseCard};
 
     img {
-      margin-top: calc(0px - 2.5rem - 6px);
+      margin-top: calc(0px - 1rem - 6px);
     }
 
     .tags {
@@ -62,6 +65,7 @@ export const ProductsContainer = styled.div`
       color: ${(props) => props.theme.yellowDark};
       background-color: ${(props) => props.theme.yellowLight};
       border-radius: 100px;
+      margin-top: 12px;
     }
 
     .description {
