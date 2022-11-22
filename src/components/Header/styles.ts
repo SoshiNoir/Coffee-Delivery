@@ -4,11 +4,12 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 32px;
 
   nav {
     display: flex;
     gap: 0.5rem;
-    padding: 32px;
 
     .address {
       display: flex;
