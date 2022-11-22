@@ -9,11 +9,12 @@ export function Header() {
     <HeaderContainer>
       <img src={logoCoffee} alt='' />
       <nav>
-        <NavLink to='/' title='Localização'>
-          <ShoppingCart size={32} weight='fill' />
+        <NavLink className='address' to='/Checkout' title='Localização'>
+          <MapPin className='pinIcon' size={22} weight='fill' />
+          Franca, SP
         </NavLink>
-        <NavLink to='/Checkout' title='Localização'>
-          <MapPin size={32} weight='fill' />
+        <NavLink to='/Checkout' title='Carrinho de Compras'>
+          <ShoppingCart className='cartIcon' size={22} weight='fill' />
         </NavLink>
       </nav>
     </HeaderContainer>
