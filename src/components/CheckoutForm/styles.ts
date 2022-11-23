@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const CheckoutFormContainer = styled.div`
   display: flex;
-  max-width: 1120px;
   align-items: center;
   flex-direction: column;
   align-items: flex-start;
@@ -24,6 +23,7 @@ export const CheckoutFormContainer = styled.div`
   }
 
   .coffeeCard {
+    width: 640px;
     margin-right: 32px;
     display: flex;
     flex-direction: column;
@@ -58,6 +58,7 @@ export const CheckoutFormContainer = styled.div`
   }
 
   form {
+    width: 560px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -71,6 +72,7 @@ export const CheckoutFormContainer = styled.div`
   }
 
   input {
+    width: 150px;
     align-items: center;
     padding: 12px;
     gap: 4px;
