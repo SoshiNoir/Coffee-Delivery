@@ -7,8 +7,8 @@ export function Router() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/Checkout' element={<Checkout />} />
-      <Route path='/Confirmed' element={<Confirmed />} />
+      <Route path='/checkout' element={<Checkout />} />
+      <Route path='/confirmed' element={<Confirmed />} />
     </Routes>
   );
 }

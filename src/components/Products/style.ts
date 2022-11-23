@@ -51,7 +51,13 @@ export const ProductsContainer = styled.div`
       margin-top: calc(0px - 1rem - 6px);
     }
 
-    .tags {
+    .tagDirection {
+      display: flex;
+      flex-direction: row;
+      gap: 2px;
+    }
+
+    .tag {
       font-weight: 700;
       text-transform: uppercase;
       display: flex;
@@ -59,7 +65,6 @@ export const ProductsContainer = styled.div`
       justify-content: center;
       align-items: center;
       padding: 4px 8px;
-      width: 81px;
       height: 21px;
       font-size: 0.625rem;
       color: ${(props) => props.theme.yellowDark};

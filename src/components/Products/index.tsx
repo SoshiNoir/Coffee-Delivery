@@ -12,12 +12,13 @@ export function Products() {
           ProductsData.map((product) => (
             <div className='card'>
               <img src={product.img} alt='' />
-              {product.tag &&
-                product.tag.map((tag: any) => (
-                  <div className='tags'>
+              <div className='tagDirection'>
+                {product.tag &&
+                  product.tag.map((tag: any) => (
                     <p className='tag'>{tag.tagname}</p>
-                  </div>
-                ))}
+                  ))}
+              </div>
+
               <h1 className='productTitle'>{product.title}</h1>
               <p className='description'>{product.description}</p>
               <div className='buyLine'>

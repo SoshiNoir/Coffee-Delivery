@@ -7,7 +7,9 @@ import logoCoffee from '../../assets/Logo.svg';
 export function Header() {
   return (
     <HeaderContainer>
-      <img src={logoCoffee} alt='' />
+      <a href='/'>
+        <img src={logoCoffee} alt='' />
+      </a>
       <nav>
         <NavLink className='address' to='/Checkout' title='Localização'>
           <MapPin className='pinIcon' size={22} weight='fill' />

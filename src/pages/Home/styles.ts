@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Background from '../../assets/Background.svg';
 
 export const IntroContainer = styled.div`
   display: flex;

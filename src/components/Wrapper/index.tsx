@@ -13,7 +13,6 @@ export function Wrapper({ children }: WrapperProps) {
     <WrapperContainer>
       <Header />
       {children}
-      <Products />
     </WrapperContainer>
   );
 }
