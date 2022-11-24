@@ -58,7 +58,7 @@ export const CheckoutFormContainer = styled.div`
   }
 
   form {
-    width: 560px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -72,8 +72,9 @@ export const CheckoutFormContainer = styled.div`
   }
 
   input {
-    width: 150px;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
     padding: 12px;
     gap: 4px;
 
@@ -81,6 +82,34 @@ export const CheckoutFormContainer = styled.div`
     border: 1px solid ${(props) => props.theme.baseInput};
     border-radius: 4px;
 
+    color: ${(props) => props.theme.baseText};
+  }
+
+  input::placeholder {
     color: ${(props) => props.theme.baseLabel};
+  }
+
+  form div {
+    width: 100%;
+  }
+
+  .street {
+    width: 100%;
+  }
+
+  .complement {
+    width: 100% !important;
+  }
+
+  .neighborhood {
+    width: 33% !important;
+  }
+
+  .city {
+    width: 33% !important;
+  }
+
+  .estate {
+    width: 33% !important;
   }
 `;

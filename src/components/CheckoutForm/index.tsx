@@ -14,16 +14,20 @@ export function CheckoutForm() {
           </div>
         </div>
         <form>
-          <input type='text' placeholder='CEP' />
-          <input type='text' placeholder='Rua' />
+          <input className='postcode' type='number' placeholder='CEP' />
+          <input className='street' type='text' placeholder='Rua' />
           <div>
-            <input type='text' placeholder='Número' />
-            <input type='text' placeholder='Complemento' />
+            <input className='number' type='number' placeholder='Número' />
+            <input
+              className='complement'
+              type='text'
+              placeholder='Complemento'
+            />
           </div>
           <div>
-            <input type='text' placeholder='Bairro' />
-            <input type='text' placeholder='Cidade' />
-            <input type='text' placeholder='UF' />
+            <input type='neighborhood' placeholder='Bairro' />
+            <input type='city' placeholder='Cidade' />
+            <input type='estate' placeholder='UF' />
           </div>
         </form>
       </div>
