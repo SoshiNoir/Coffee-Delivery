@@ -1,11 +1,22 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
+  width: 100%;
+  height: 6.5rem;
+  background: ${({ theme }) => theme.colors['base-background']};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   nav {
     display: flex;
@@ -23,7 +34,7 @@ export const HeaderContainer = styled.header`
 
       width: 143px;
       height: 38px;
-      background: ${(props) => props.theme.purpleLight};
+      background: ${({ theme }) => theme.colors['brand-purple-light']};
 
       flex: none;
       order: 0;
@@ -37,12 +48,12 @@ export const HeaderContainer = styled.header`
       padding: 8px;
       gap: 4px;
 
-      color: ${(props) => props.theme.yellowDark};
-      background: ${(props) => props.theme.yellowLight};
+      color: ${({ theme }) => theme.colors['brand-yellow-dark']};
+      background: ${({ theme }) => theme.colors['brand-yellow-light']};
     }
 
     .pinIcon {
-      color: ${(props) => props.theme.purple};
+      color: ${({ theme }) => theme.colors['brand-purple']};
     }
   }
 `;

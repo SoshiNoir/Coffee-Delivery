@@ -7,7 +7,6 @@ export function Router() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/checkout' element={<Checkout />} />
       <Route path='/confirmed' element={<Confirmed />} />
     </Routes>
   );
