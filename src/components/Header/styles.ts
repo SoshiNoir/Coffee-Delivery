@@ -20,6 +20,9 @@ export const HeaderContainer = styled.header`
 
   nav {
     display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     gap: 0.5rem;
 
     .address {
@@ -50,6 +53,20 @@ export const HeaderContainer = styled.header`
 
       color: ${({ theme }) => theme.colors['brand-yellow-dark']};
       background: ${({ theme }) => theme.colors['brand-yellow-light']};
+    }
+
+    span {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      background: ${({ theme }) => theme.colors['brand-yellow-dark']};
+      color: ${({ theme }) => theme.colors['base-white']};
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      align-items: center;
     }
 
     .pinIcon {

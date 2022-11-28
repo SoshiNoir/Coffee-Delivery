@@ -3,8 +3,10 @@ import { HeaderContainer } from './styles';
 
 import { NavLink } from 'react-router-dom';
 import logoCoffee from '../../assets/Logo.svg';
+import { useCart } from '../../hooks/useCart';
 
 export function Header() {
+  const { cartQuantity } = useCart();
   return (
     <HeaderContainer className='container'>
       <a href='/'>
@@ -16,6 +18,7 @@ export function Header() {
           Franca, SP
         </NavLink>
         <NavLink to='/completeOrder' title='Carrinho de Compras'>
+          {cartQuantity >= 1 && <span>{cartQuantity}</span>}
           <ShoppingCart className='cartIcon' size={22} weight='fill' />
         </NavLink>
       </nav>
