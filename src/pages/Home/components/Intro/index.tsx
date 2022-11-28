@@ -14,7 +14,7 @@ export function Intro() {
   const { colors } = useTheme();
   return (
     <IntroContainer>
-      <IntroContent>
+      <IntroContent className='container'>
         <div>
           <section>
             <IntroTitle size='xl'>
