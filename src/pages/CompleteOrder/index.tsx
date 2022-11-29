@@ -2,6 +2,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { FormProvider, useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import * as zod from 'zod';
+import { useCart } from '../../hooks/useCart';
 import { CompleteOrderForm } from './components/CompleteOrderForm';
 import { SelectedCoffees } from './components/SelectedCoffees';
 import { CompleteOrderContainer } from './styles';
@@ -39,11 +40,13 @@ export function CompleteOrderPage() {
   const { handleSubmit } = confirmOrderForm;
 
   const navigate = useNavigate();
+  const { cleanCart } = useCart();
 
   function handleConfirmOrder(data: ConfirmOrderFormData) {
     navigate('/orderConfirmed', {
       state: data,
     });
+    cleanCart();
   }
 
   return (
