@@ -17,7 +17,11 @@ export function Header() {
           <MapPin className='pinIcon' size={22} weight='fill' />
           Franca, SP
         </NavLink>
-        <NavLink to='/completeOrder' title='Carrinho de Compras'>
+        <NavLink
+          to='/completeOrder'
+          className='cart'
+          title='Carrinho de Compras'
+        >
           {cartQuantity >= 1 && <span>{cartQuantity}</span>}
           <ShoppingCart className='cartIcon' size={22} weight='fill' />
         </NavLink>

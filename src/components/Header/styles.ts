@@ -35,13 +35,17 @@ export const HeaderContainer = styled.header`
       border-radius: 6px;
       text-decoration: none;
 
-      width: 143px;
       height: 38px;
       background: ${({ theme }) => theme.colors['brand-purple-light']};
 
       flex: none;
       order: 0;
       flex-grow: 0;
+    }
+
+    .cart {
+      height: 38px;
+      width: 38px;
     }
 
     .cartIcon {
